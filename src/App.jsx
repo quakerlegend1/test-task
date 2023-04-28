@@ -23,7 +23,7 @@ function App() {
           <section className={styles.headerInfo}>
             <div className={styles.logoMain}>
               <div><span>Санкт-Петербург</span></div>
-              <img alt="logo" src={logo}/>
+              <a href="https://spmipk.com/"><img alt="logo" src={logo}/></a>
             </div>
             <div className={styles.socialMedia}>
               <a href="https://vk.me/spb.mipk?roistat_visit=139310" target="_blank">
@@ -59,10 +59,15 @@ function App() {
         </section>
       </header>
       <main className={styles.main}>
+        <p style={{textAlign:"end"}}><em>Работу выполнил Шагламджян А.С</em></p>
         <img src={carousel} width="1353" height="400"/>
+        <br></br>
         <img src={carousel} width="1353" height="400"/>
+        <br></br>
         <img src={carousel} width="1353" height="400"/>
+        <br></br>
         <img src={carousel} width="1353" height="400"/>
+        <br></br>
         <img src={carousel} width="1353" height="400"/>
       </main>
     </div>  
