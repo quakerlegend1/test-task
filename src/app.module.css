@@ -3,26 +3,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
 }
 
 .header {
-    background-color: #ecc4c46c;
+    background-color: #F8F9FA;
     min-width: 100%;
     position: fixed;
     height: 166px;
     display: flex;
     align-items: center;
     color: #001B5B;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
     
 }
 
 .headerShadow {
     box-shadow: 1px 4px 15px rgba(155,169,190,.2);
     animation-name: headerSlide ;
-    animation-duration: 0.6s;
+    animation-duration: 0.7s;
     background-color: #F8F9FA;
     height: 126px;
 }
@@ -41,27 +40,82 @@
     width: 1350px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     
 }
 
 .headerInfo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    column-gap: 76px;
 }
+
+.logoMain {
+    
+}
+
+.logoMain div {
+    text-align: center;
+    display: table;
+    background-color: #DEE8FF;
+    width: 207px;
+    height: 27px;
+    color:#041741;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    border-radius: 3px;
+}
+
+.logoMain span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 
 .socialMedia {
     display: flex;
     column-gap: 10px;
     width: 127px;
     height: 35px;
+    margin-left: 39px;
+    margin-top: 5px;
+    
 }
 
 .socialMedia img {
     object-fit: scale-down;
+}
+
+.form {
+    border: 1px solid #4E6BAD;
+    border-radius: 3px;
+    margin-left: 76px;
+    margin-right: 76px;
+    display: flex;
+}
+
+.searchInput {
+    border-radius: 3px 0px 0px 3px;
+    width: 446px;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.submitInput {
+    letter-spacing: 0.03em;
+    width: 116px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background: url("../public/search-icon.png") #4E6BAD no-repeat ;
+    background-position: 77px;
+    background-image: white;
+    text-align: start;
+    padding: 13px;
 }
 
 .contacts {
@@ -72,21 +126,28 @@
 }
 
 .blueLine {
+    margin-top: 25px;
     height: 1px;
     width: 1278px;
     background-color: #0752FF;
 }
 
+.blueLineNone {
+    display: none;
+}
+
 .headerNavigation {
-    font-size: 1.4em;
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     column-gap: 180px;
 }
 
 .headerNavigation li {
     cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 5h00;
 }
 
 .headerNavigationNone {

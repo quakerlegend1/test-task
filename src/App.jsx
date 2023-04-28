@@ -6,6 +6,7 @@ import whatsappIcon from "../public/whatsapp-icon.svg";
 import telegramIcon from "../public/telegram-icon.svg";
 import { useState } from "react";
 
+
 function toScroll(state) {
   document.onscroll=()=>{if(window.pageYOffset > 0) {state(true)} else {state(false)}}
 }
@@ -20,8 +21,8 @@ function App() {
       <header className={shadow ===false ? styles.header :[styles.header, styles.headerShadow].join(" ")} >
         <section className={styles.headerMain}>
           <section className={styles.headerInfo}>
-            <div>
-              <span style={{color:"#041741",fontSize:"12px"}}>Санкт-Петербург</span>
+            <div className={styles.logoMain}>
+              <div><span>Санкт-Петербург</span></div>
               <img alt="logo" src={logo}/>
             </div>
             <div className={styles.socialMedia}>
@@ -35,16 +36,17 @@ function App() {
                 <img alt="telegram-icon" width="30" src={telegramIcon } />
               </a>
             </div>
-            <div>
-              <input type="search" placeholder="Найти"></input>
-            </div>
+            <form className={styles.form}>
+              <input type="search" placeholder="НАЙТИ" className={styles.searchInput}></input>
+              <input type="submit" value="ПОИСК" className={styles.submitInput}></input>
+            </form>
             <div className={styles.contacts}>
               <span style={{color:"#4E6BAD"}}>ПН-ВС 09:00 - 18:00 &#40;МСК&#41;</span>
               <a href="tel:88000000000" style={{fontSize:"24px",fontWeight:"500",color:"#001B5B"}}>8&#40;800&#41; 000-00-00</a>
               <a href="info@spmipk.com" style={{color:"#4E6BAD",fontSize:"16px"}}>info@spmipk.com</a>
             </div>
           </section>
-          <div className={styles.blueLine}></div>
+          <div className={shadow === false ? styles.blueLine : [styles.blueLine,styles.blueLineNone].join(" ")}></div>
           <nav>
             <ul className={shadow ? [styles.headerNavigation, styles.headerNavigationNone].join(" "): styles.headerNavigation}>
               <li>направления</li>
