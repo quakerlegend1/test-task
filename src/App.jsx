@@ -26,12 +26,13 @@ function App() {
               <a href="https://spmipk.com/"><img alt="logo" src={logo}/></a>
             </div>
             <div className={styles.socialMedia}>
+              <a href="#" target="_blank">
                 <img alt="vk-icon" width="30" src={vkIcon } />
               </a>
-              <a href="https://wa.me/+79210975015?roistat_visit=139310&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%BD%D0%B5%20%D0%BD%D1%83%D0%B6%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F.%20%D0%9C%D0%BE%D0%B9%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F:%20127929" target="_blank">
+              <a href="#" target="_blank">
                 <img alt="whatsapp-icon" width="30" src={whatsappIcon } />
               </a>
-              <a href="https://telegram.me/spmipk?roistat_visit=139310" target="_blank">
+              <a href="#" target="_blank">
                 <img alt="telegram-icon" width="30" src={telegramIcon } />
               </a>
             </div>
@@ -58,7 +59,6 @@ function App() {
         </section>
       </header>
       <main className={styles.main}>
-        <p style={{textAlign:"end"}}><em>Работу выполнил Шагламджян А.С</em></p>
         <img src={carousel} width="1353" height="400"/>
         <br></br>
         <img src={carousel} width="1353" height="400"/>
